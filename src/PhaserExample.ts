@@ -26,7 +26,7 @@ function create ()
     graphics.strokePath();
 
     // line 2
-    graphics.lineStyle(10, 0xff0000, 1, 0.5);
+    graphics.lineStyle(10, 0xff0000, 1);
     graphics.beginPath();
     graphics.moveTo(300, 100);
     graphics.lineTo(100, 300);
