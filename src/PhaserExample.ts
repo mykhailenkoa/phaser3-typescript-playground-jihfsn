@@ -18,18 +18,17 @@ function create ()
     // Create a new graphics object
     const graphics = this.add.graphics();
 
-    // Set the line style
-    graphics.lineStyle(10, 0xff0000, 1, 0.5, true);
+    // line 1
+    graphics.lineStyle(10, 0xff0000, 1);
+    graphics.beginPath();
+    graphics.moveTo(100, 100);
+    graphics.lineTo(300, 300);
+    graphics.strokePath();
 
-    // Draw the first line
-    graphics.moveTo(50, 50);
-    graphics.lineTo(250, 250);
-
-    // Draw the second line
-    graphics.moveTo(250, 50);
-    graphics.lineTo(50, 250);
-
-    // Set the rounded corners for both lines
-    graphics.lineCap = 'round';
-    graphics.lineJoin = 'round';
+    // line 2
+    graphics.lineStyle(10, 0xff0000, 1, 0.5);
+    graphics.beginPath();
+    graphics.moveTo(300, 100);
+    graphics.lineTo(100, 300);
+    graphics.strokePath();
 }
